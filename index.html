@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <title>Bootstrap 4 Course Class 8 - Height and Width</title>
+                                        <!--Rellenos, Márgenes y Espaciados.-->
+</head>
+<body>
+
+    <h1 class="h1 text-center">Bootstrap 4 Height and Width.</h1>
+    <!--Para determinar un Ancho(Width) o Alto(Height) Personalizado que queremos que tenga un Elemento, Bootstrap Posee 8 Clases Espcíficas Predeterminadas, que se Escriben:_
+    class="(Letra "w" para el Ancho(Width) o "h" para el Alto(Height))-(Número de uno de los 4 Porcentajes Predeterminados que son "25"(25%), "50"(50%), "75"(75%) o "100"(100%))", Cualquier otro Número
+     de Porcentaje Fuera de los 4 Predeterminados será tomado como Inválido.
+
+    +-Así formamos las Siguientes 8 Clases de Ancho(Width) o Alto(Height) de un Elemento y el Nº de Porcentaje Total que va a Ocupar del Espacio Que se Tenga Disponible:_
+    +-"w-25" para que el Elemento Ocupe el 25% de todo el Espacio de Ancho que tiene Disponible para Ocupar.
+    +-"w-50" para que el Elemento Ocupe el 50% de todo el Espacio de Ancho que tiene Disponible para Ocupar.
+    +-"w-75" para que el Elemento Ocupe el 75% de todo el Espacio de Ancho que tiene Disponible para Ocupar.
+    +-"w-100" para que el Elemento Ocupe el 100% de todo el Espacio de Ancho que tiene Disponible para Ocupar.
+    +-"h-25" para que el Elemento Ocupe el 25% de todo el Espacio de Alto que tiene Disponible para Ocupar.
+    +-"h-50" para que el Elemento Ocupe el 50% de todo el Espacio de Alto que tiene Disponible para Ocupar.
+    +-"h-75" para que el Elemento Ocupe el 75% de todo el Espacio de Alto que tiene Disponible para Ocupar.
+    +-"h-100" para que el Elemento Ocupe el 100% de todo el Espacio de Alto que tiene Disponible para Ocupar.
+    NOTA IMPORTANTE:_ En el caso de la Altura(Height) el/los Elemento/s DEBEN ESTAR dentro de un Elemento Primario con una Altura Determinada/Especificada porque si no la Clase de Altura (class="h-*") es
+    tomada como Inválida al ser el Espacio de Alto que tiene Disponible para Ocupar INFINITO, al contrario del Ancho(Width) que tiene como Máximo el como Espacio Disponible para Ocupar todo el Ancho de la Pantalla,
+    que NO es INFINITO.
+
+    +-Ejemplos Prácticos y Gráficos:_
+    -->
+
+    <hr class="bg-dark">
+
+    <div class="bg-primary">
+    <h1 class="h1 text-center bg-info p-5 w-25">Element with Width 25%.</h1>
+
+    <h1 class="h1 text-center bg-info p-5 w-50">Element with Width 50%.</h1>
+
+    <h1 class="h1 text-center bg-info p-5 w-75">Element with Width 75%.</h1>
+
+    <h1 class="h1 text-center bg-info p-5 w-100">Element with Width 100%.</h1>
+    </div>
+
+    <hr class="bg-dark">
+
+    <hr class="bg-dark">
+
+    <div class="bg-primary" style="height: 600px;">
+    <!--En este caso, este DIV con una Altura Determinada/Especificada de 600 Píxeles (style="height: 600px;"), actúa como Elemento Primario/Contenedor de los Siguientes Elementos con Alturas(Height) Determinadas.
+    Así, por ejemplo el Elemento con class="h-50" Ocupa el 50% de todo el Espacio de Alto que tiene Disponible para Ocupar, que son 300px de los 600px de Alto(Height) que tiene el DIV.-->
+
+    <h1 class="bg-success p-5 h-25 d-inline-block">Element with<br>Height 25%.</h1>
+
+    <h1 class="bg-success p-5 h-50 d-inline-block">Element with<br>Height 50%.</h1>
+
+    <h1 class="bg-success p-5 h-75 d-inline-block">Element with<br>Height 75%.</h1>
+
+    <h1 class="bg-success p-5 h-100 d-inline-block">Element with<br>Height 100%.</h1>
+    </div>
+
+    <hr class="bg-dark">
+
+
+
+
+
+
+
+<!-- Si utilizamos componentes de Bootstrap que requieran Javascript agregar estos tres archivos -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
